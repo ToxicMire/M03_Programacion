@@ -1,37 +1,39 @@
-lista = [2,3,'cadena1','cadena2',3,3.5,True,False,['a','b','c'],'lalala',3]
+cadeana = "abcd"
+print(cadeana[3])
+print(len(cadeana))
+#imprime los elementos de la cadena
+#solo si quiero un elemento de una cadena si pones : es el resto del elemento
+tupla = (1,"string", 3.4, "otro string")
+#tipo de secuencia
 
-print(len(lista)) #Nº DE LAS POSICIONES DE LA LISTA
-print('cadena1' in lista) #encontrar info en las listas
-print(lista.index('cadena2')) # posicion donde se encuentra el primer numero a no se que se explique  .index(a,b,c) mirar info 
-print(lista.count(3)) #veces que aparece el elemento en la lista 
-lista[3] = 'X' #cambia el valor en la posicion por la lista
-print(lista)
-lista.append('X')# se añade elemento al final
-lista.insert(2,'x') 
-lista.remove('x') #solo elimina el primero 
-#para eliminar buscar y añadir todo a una nueva lista 
-lista[2:8] = [1,2,3]#sustituye todo lo que este en esas posiciones 
+print(len(tupla))
+
+for i in range(len(tupla)):
+    print(tupla[i])
+
+print(tupla[:3])
+#no se inclulle el elemento colocado
+print(tupla[2:])
+#ahora si se incluye el elemento colocado
 
 
-elemento = 3
+print("string" in tupla) #comporbar si el elemento esta dentro de la tupla o lista
 
-if elemento in lista:
-    posicion = 0
-    for i in range(lista.count(elemento)):
-        print(lista.index(elemento,posicion))
-        posicion = lista.index(elemento,posicion)+1
-        
-else:
-    print('{} no esta en la lista'.format(elemento))
-########################################################################
-lista = [34,54,234,34,65]
-lista = ['123','abc','9']
-print(max(lista)) # el maximo
-print(min(lista)) # el minimo
+tupla1 = (1,"string", 3.4, "otro string", ("1", "2", "3","4","5"))
 
-########################################################################
-lista1 = [1] # aun que lo pongas vacio es una lista 
-print(type(lista1))
+print(len(tupla1[4])) #logitud de la tupla
 
-lista2 = 'aeiou'
-print(lista[2]) # dice la posicion de la lista 
+print(tupla1[4][1:3])
+
+print(max(cadeana))
+# coje el valor mas al  to
+print(min(cadeana))
+#elije el valor mas chiquito
+
+tupla2 = (3,4,5,6)
+
+print(max(tupla2))
+
+tupla3 = (1,2,3,4,5,)
+
+lista1 = [1,2,3,4,5,6,7,8,9]
